@@ -30,11 +30,11 @@ ROLE_SETTING = """
 
 class ChatBot:
     def __init__(self):
-        self.client = OpenAI(api_key="sk-59082a848a3f494d9b963d2248fec9fe", base_url="https://api.deepseek.com")
+        self.client = OpenAI(api_key="", base_url="")
         self.wx = WeChat()
         self.listen_list = [
-            "范纯毓",
-            "shy"
+            "",
+            ""
             ]  # 监听列表
         # 使用字典存储每个用户的对话历史
         self.conversation_histories = defaultdict(list)
